@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Frontend Developer</title>
+</head>
+<body>
+    <h1>Curso de Frontend Developer</h1>
+    <p>
+        Internet: Es la combinación de las palabras Interconnected + Network.
+    </p>
+    <p>HTTP: Hyper Text Transfer Protocol, permite la comunicación entre dispositivos.</p>
+    <p>
+        URL: Uniform Resource Locator (Localizador de recursos uniformes), más conocido como la dirección de un sitio web, es la manera que agregamos un punto a la red.
+    </p>
+    <p>
+        HTML: Hyper Text Markup Language (Lenguaje de marcado de hiper texto), da la estructura a un sitio web.
+    </p>
+    <p>
+        CSS: reglas que establecen la apariencia de una web, para pantallas grandes y pequeñas (Responsive Design). Apareció en 1994.
+    </p>
+   <h1>
+       ¿Qué son y para qué nos sirven HTML y CSS?
+   </h1>
+   <h2>
+       HTML
+   </h2>
+   <p>
+       Lenguaje de marcado, nos permite estructurar nuestro sitio web. Tenemos varios elementos llamados etiquetas y nos periten construir varios elementos en nuestro sitio como botones, barras de búsquedas, menús, etc. Un sitio para saber las etiquetas es <a href="https://htmlreference.io">htmlreference.io</a>
+   </p>
+   <h2>
+       CSS
+   </h2>
+   <p>
+        Es un lenguaje que permite crar páginas web con un diseño agradable para los usuarios. Es decir, podemos colocar colores, cambiar la fuente en tamaños y estilos. Un sitio para saber más de CSS es <a href="https://cssreference.io">cssreference.io</a>
+   </p>
+   <h1>
+       DOM, CSSOM, Render Tree y el proceso de renderizado de la web
+   </h1>
+   <h2>
+       DOM
+   </h2>
+    <p>
+        Document Object Model, al escribir el código en HTML el navegador requiere del DOM para poder interpretrar las etiquetas y los transforma en objetos que pinta, por ejemplo, este mismo texto es una etiqueta p.
+    </p>
+    <H2>
+        CSSOM
+    </H2>
+    <p>
+        Al igual que el DOM, interptreta las etiquetas y las transforma en objetos, pero en este caso del CSS.
+    </p>
+    <h2>
+        Render Tree
+    </h2>
+    <p>
+        Un árbol que une el DOM y CCSOM para renderizarlos, creando un código que pueda interpretar el navegador. El navegador hace unos pasos fundamentales para hacer la transformación:
+    </p>
+    <ol>
+        <li>
+            Bytes: los convierte en números
+        </li>
+        <li>
+            Characters: los convierte en caracteres, como el UTF-8.
+        </li>
+        <li>
+            Tokens: Va a identificar las etiquetas en elementos HTML, como donde inicia y termina un tag html, body, etc.
+        </li>
+        <li>
+            Nodes: Interpreta los nodos, sabiendo cuál es un objeto html, un head, meta, etc.
+        </li>
+        <li>
+            DOM: Organiza los nodos.
+        </li>
+        
+    </ol>        
+
+    
+    <img src="/img/renderTreeDOM.PNG" alt="Fuente: platzi.com, curso de Frontend Developer">
+    <p>
+        En la siguiente imagen podemos ver el árbol con el CCSOM, donde los estilos están vinculados a cada objeto del DOM:
+    </p>
+    <img src="/img/rendertree.PNG" alt="Fuente: platzi.com, curso de Frontend Developer">
+    <p>
+        Es por ello es muy importante tener en cuenta el CSS que colocamos en nuestros sitios webs, para evitar las demoras de carga de un sitio web.
+    </p>
+    <h2>
+        Pasos que hace el navegador
+    </h2>
+    <ol>
+        <li>
+            Procesa HTML y construye el DOM
+        </li>
+        <li>
+            Procesa CSS y construye el CCSOM
+        </li>
+        <li>
+            DOM + CCSOM = Render Tree
+        </li>
+        <li>
+            Ejecuta el diseño en el Render Tree
+        </li>
+        <li>
+            Pinta el nodo en la pantalla
+        </li>
+    </ol>
+    <h1>
+        5 tips para aprender CCS
+    </h1>
+    <img src="/img/tipsCSS.png">
+    <h1>
+        Anatomía de un Elemento HTML: Atributos, Anidamiento y Elementos vacíos
+    </h1>
+    <h2>
+        Anatomía de un Elemento HTML
+    </h2>
+    <p>Veamos la siguiente imagen</p>
+    <img src="/img/anatomiaHTML.PNG">
+    <p>Esta es una etiqueta h1, la cual es de un encabezado. Esta página web consta de varias etiquetas de encabezado. Hay diferentes tipos de encabezado siendo de mayor a menor: h1, h2, h3, h4, h5 y h6.</p>
+    <p>
+        Un elemento HTML, está compuesto por una etiqueta de apertura, esta etiqueta debe de tener un nombre específico, en nuestro ejemplo "h1", y debe de estar entre los signos "<>", luego sigue el contenido, que es lo que quieres escribir, y finalmente va una etoqueta de cierre, es que similar a la etiqueta de apertura, pero lleva "/".
+    </p>
+    <p>El elemento HTML sería todo, es decir la etiqueta de apertura, el contenido y la etiqueta de cierre</p>
+    <h2>
+        Atributos
+    </h2>
+    <img src="/img/atributosHTML.PNG">
+    <p>
+        En la imagen, vemos un atributo llamado class, este tipo de atributo le podemos poner un tipo de identificador, en el ejemplo de la imagen, sería "saludo". Los atributo son palabras especiales que se utilizan para configurar un elemento, estos atributos siempre van a ir en la etiqueta de apertura.
+     </p>
+    <h2>
+        Anidamiento
+    </h2>
+    <p>
+        Es fundamental, debido a que es la base para poder realizar buenos renderizados de nuestros sitios webs. Según podemos entender como anidamiento, es la existencia de un elemento que se encuentra en otro, por ejemplo el caso de un elemento li que vive dentro del elemento ol, o los casos de elementos div, que se encuentran dentro de otro div.
+    </p>
+    <h2>
+        Elementos vacíos
+    </h2>
+    <p>
+        Son elementos que no pueden tener elementos anidados. tenemos el ejemplo de img como el más conocido, pero hay otros como area, base, br, col, entre otros.
+    </p>
+    <img src="/img/elementosVaciosHTML.PNG" alt="imagen de elementos vacios">
+
+<footer>
+    <p>Este sitio web fue realizado con lo aprendido en el curso de Frontend Developer</p>
+</footer>
+</body>
+
+</html>
